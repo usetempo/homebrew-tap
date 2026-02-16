@@ -5,20 +5,20 @@
 class TempoCli < Formula
   desc "AI code attribution for git commits"
   homepage "https://github.com/usetempo/tempo-cli"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.0/tempo-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d556730167361a72005a65edd0a87e8dd1456c1f4035885615de3e32afdc6318"
+      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.1/tempo-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "bc23b1c8cbfd2b92960479d0372f9e266b67aaf0ead178d7c08bc9e5aadff3d7"
 
       def install
         bin.install "tempo-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.0/tempo-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "664b6dd3a161f930e541e7ed43922518e604f488c14ee00ce839410492aa1816"
+      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.1/tempo-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "6ea56ad61ae15b5a7f5daca0dfdf32bb401ff977e8fb33d8375ee73c57584b21"
 
       def install
         bin.install "tempo-cli"
@@ -28,15 +28,15 @@ class TempoCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.0/tempo-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "b1a02026b206581b4b2e57c96273682c07f164e474017fc5c159574397ad77f6"
+      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.1/tempo-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "eb5d60a6477f11ff7c7c070a5859932172dc3a9ffbc05141ebdb625987b85472"
       def install
         bin.install "tempo-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.0/tempo-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "26495b7c27bd90f745b9a750308f4660bb3456b212d64694ba0cfde22b3477f3"
+      url "https://github.com/usetempo/tempo-cli/releases/download/v0.1.1/tempo-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "dae0f030fe35e80abc0ee1d65a47d146ac42fd60aa7b8c6722dde2cef8bf946a"
       def install
         bin.install "tempo-cli"
       end
